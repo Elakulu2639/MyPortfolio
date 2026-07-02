@@ -649,6 +649,7 @@ footer{padding:64px 0 32px;border-top:1px solid var(--border)}
           <input type="hidden" name="to_email" value="e9710092@gmail.com"/>
           <input type="hidden" name="from_name" id="fromName"/>
           <input type="hidden" name="reply_to" id="replyTo"/>
+          <input type="hidden" name="subject" id="emailSubject"/>
           <div class="form-group">
             <label class="form-label" for="fname">Name</label>
             <input class="form-input" type="text" id="fname" name="user_name" placeholder="Your name" required/>
@@ -798,14 +799,16 @@ document.getElementById('year').textContent=new Date().getFullYear();
 
 var contactEmail='e9710092@gmail.com';
 var emailJsConfig={
-  serviceId:'service_k23vfrb',
+  serviceId:'service_i07l9aq',
   templateId:'template_b0l9tsj',
   publicKey:'6ijfXE-zIjOu1O4bX'
 };
 
 function syncEmailFields(){
-  document.getElementById('fromName').value=document.getElementById('fname').value.trim();
+  var name=document.getElementById('fname').value.trim();
+  document.getElementById('fromName').value=name;
   document.getElementById('replyTo').value=document.getElementById('femail').value.trim();
+  document.getElementById('emailSubject').value='Portfolio message from '+name;
 }
 
 function buildMailtoUrl(){
