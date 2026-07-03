@@ -639,6 +639,21 @@
         text-align: right;
         margin-left: 16px;
       }
+      .about-panel {
+        position: relative;
+        padding: 8px 24px;
+        border: 1px solid var(--border);
+        border-left: 2px solid var(--accent);
+        background:
+          linear-gradient(90deg, var(--accent-dim), transparent 34%),
+          var(--surface);
+      }
+      .about-panel .detail-row:first-child {
+        border-top: none;
+      }
+      .about-panel .detail-row:last-child {
+        border-bottom: none;
+      }
 
       /* JOURNEY TIMELINE */
       .journey-grid {
@@ -1476,30 +1491,19 @@
           <h1 class="hero-name">
             Elias<br /><span class="accent-line">Aynekulu</span>
           </h1>
-          <div class="hero-role">Full-Stack Software Engineer</div>
+          <div class="hero-role">
+            Building reliable web applications that solve real business
+            problems.
+          </div>
           <p class="hero-bio">
-            I build robust web applications across the full technology stack
-            &mdash; from responsive interfaces in React and Next.js to scalable
-            APIs in Node.js, Python, and ASP.NET Core. Based in Addis Ababa,
-            Ethiopia.
+            I transform complex ideas into scalable, maintainable software
+            solutions. My focus is building applications that deliver real value
+            to users, remain easy for teams to evolve, and are built with
+            long-term reliability in mind.
           </p>
           <div class="hero-actions">
             <a class="btn-primary" href="#projects">View Projects</a>
             <a href="resume.pdf" download class="btn-ghost">Download CV</a>
-          </div>
-          <div class="hero-stats">
-            <div>
-              <span class="stat-num">2+</span
-              ><span class="stat-label">Years Experience</span>
-            </div>
-            <div>
-              <span class="stat-num">15+</span
-              ><span class="stat-label">Projects Shipped</span>
-            </div>
-            <div>
-              <span class="stat-num">4</span
-              ><span class="stat-label">Stack Layers</span>
-            </div>
           </div>
         </div>
         <div class="hero-photo">
@@ -1515,54 +1519,67 @@
       <div class="container">
         <div class="section-label reveal">About</div>
         <h2 class="section-title reveal">
-          Engineering depth,<br />not just delivery.
+          I build for clarity,<br />change, and real use.
         </h2>
         <p class="section-sub reveal">
-          Passionate developer crafting software that is readable, maintainable,
-          and solves real problems.
+          I am a software engineering graduate focused on building practical
+          full-stack products that solve real operational problems.
         </p>
 
         <div class="about-grid">
           <div class="about-text reveal">
             <p>
-              I'm a software engineer with
-              <strong>over 2 years of professional experience</strong> building
-              full-stack applications. My work spans modern frontend frameworks,
-              enterprise backend systems, and relational database architecture.
+              I enjoy building software that has a clear purpose: systems that
+              help people organize work, understand data, manage business
+              processes, or replace slow manual workflows. My projects have
+              given me practice across complete application flows, from shaping
+              the user experience to designing data models, APIs, and backend
+              behavior.
             </p>
             <p>
-              I take a pragmatic approach to software: write code that is
-              readable, maintainable, and solves the actual problem. I work
-              effectively in cross-functional teams and care about both
-              technical quality and business outcomes.
+              When I approach a problem, I try to understand the workflow before
+              deciding on the implementation. I care about what the user is
+              trying to accomplish, what the business needs to measure or
+              control, and where the system is likely to change later. That
+              helps me make decisions that are simpler, easier to test, and less
+              fragile.
             </p>
             <p>
-              My recent focus has been on
-              <strong>React and Next.js frontends</strong>,
-              <strong>ASP.NET Core APIs</strong>, and integrating machine
-              learning capabilities into production applications.
+              Clean architecture matters to me because software rarely stays in
+              its first version. I want the systems I build to be understandable
+              after the first release, safe to extend, and useful to the people
+              who depend on them. I am still early in my professional career,
+              but I am intentional about learning from every project, improving
+              how I structure code, and building with long-term reliability in
+              mind.
             </p>
           </div>
-          <div class="reveal">
+          <div class="about-panel reveal">
             <div class="detail-row">
               <span class="detail-key">Location</span
               ><span class="detail-val">Addis Ababa, Ethiopia</span>
             </div>
             <div class="detail-row">
-              <span class="detail-key">Focus</span
-              ><span class="detail-val">Full-Stack Development</span>
+              <span class="detail-key">Education</span
+              ><span class="detail-val">Software Engineering Graduate</span>
             </div>
             <div class="detail-row">
-              <span class="detail-key">Frontend</span
-              ><span class="detail-val">React, Next.js, Vue.js</span>
+              <span class="detail-key">Current Focus</span
+              ><span class="detail-val">Full-Stack Developer Roles</span>
             </div>
             <div class="detail-row">
-              <span class="detail-key">Backend</span
-              ><span class="detail-val">Node.js, ASP.NET Core, FastAPI</span>
+              <span class="detail-key">Principles</span
+              ><span class="detail-val"
+                >Clarity, Maintainability, Reliability</span
+              >
             </div>
             <div class="detail-row">
-              <span class="detail-key">Databases</span
-              ><span class="detail-val">SQL Server, PostgreSQL</span>
+              <span class="detail-key">Availability</span
+              ><span class="detail-val">Open to Opportunities</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-key">Languages</span
+              ><span class="detail-val">English, Amharic</span>
             </div>
             <div class="detail-row">
               <span class="detail-key">Email</span
@@ -1584,20 +1601,21 @@
               <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-year">2022 &mdash; The Foundation</div>
-                <div class="timeline-label">Core CS &amp; First Steps</div>
+                <div class="timeline-label">First Steps</div>
                 <div class="timeline-desc">
-                  Built the fundamentals in C++, Java, and data structures.
-                  First exposure to HTML/CSS and how the web works.
+                  Built a foundation in programming, data structures, and
+                  problem solving while learning how software is structured from
+                  the ground up.
                 </div>
               </div>
               <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-year">2023 &mdash; Frontend Focus</div>
-                <div class="timeline-label">React, JavaScript &amp; UI</div>
+                <div class="timeline-label">Web Interfaces &amp; Usability</div>
                 <div class="timeline-desc">
-                  Dove into React, modern JavaScript, and responsive UI design.
-                  Built interactive web applications and explored
-                  component-driven architecture.
+                  Started building interactive web experiences, focusing on
+                  usability, layout, and turning static ideas into working
+                  interfaces.
                 </div>
               </div>
               <div class="timeline-item">
@@ -1605,23 +1623,24 @@
                 <div class="timeline-year">
                   2024 &mdash; Full-Stack Expansion
                 </div>
-                <div class="timeline-label">APIs, Databases &amp; ML</div>
+                <div class="timeline-label">Full-Stack Problem Solving</div>
                 <div class="timeline-desc">
-                  Expanded to backend development with ASP.NET Core, Node.js,
-                  and FastAPI. Integrated ML into a production student analytics
-                  tool. Built end-to-end enterprise applications.
+                  Moved beyond screens into complete application flows,
+                  including backend logic, data handling, integrations, and
+                  systems that support real workflows.
                 </div>
               </div>
               <div class="timeline-item">
                 <div class="timeline-dot"></div>
-                <div class="timeline-year">2025 &mdash; Present</div>
+                <div class="timeline-year">2025 &mdash; 2026</div>
                 <div class="timeline-label">
-                  Conversational AI &amp; ERP Systems
+                  Applied Projects &amp; Career Readiness
                 </div>
                 <div class="timeline-desc">
-                  Building a natural language AI assistant for ERP systems using
-                  ChromaDB vector search, Python NLP backends, and React
-                  frontends.
+                  Completed substantial academic and personal projects,
+                  including business systems, AI-assisted tools, and full-stack
+                  applications while preparing for full-stack developer
+                  opportunities.
                 </div>
               </div>
             </div>
@@ -1694,19 +1713,16 @@
             <div class="skill-group-title">Frontend</div>
             <div class="skill-tags">
               <span class="skill-tag">React.js</span
-              ><span class="skill-tag">Next.js</span
-              ><span class="skill-tag">Vue.js</span>
-              <span class="skill-tag">JavaScript</span
-              ><span class="skill-tag">HTML / CSS</span>
-              <span class="skill-tag">Tailwind CSS</span
-              ><span class="skill-tag">Bootstrap</span>
+              ><span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">HTML / CSS</span
+              ><span class="skill-tag">Tailwind CSS</span>
+              <span class="skill-tag">Bootstrap</span>
             </div>
           </div>
           <div class="skill-group">
             <div class="skill-group-title">Backend</div>
             <div class="skill-tags">
-              <span class="skill-tag">Node.js</span
-              ><span class="skill-tag">ASP.NET Core</span>
+              <span class="skill-tag">ASP.NET Core</span>
               <span class="skill-tag">ASP.NET MVC</span
               ><span class="skill-tag">Python / FastAPI</span>
               <span class="skill-tag">Java</span
@@ -1714,24 +1730,20 @@
             </div>
           </div>
           <div class="skill-group">
-            <div class="skill-group-title">Data &amp; ML</div>
+            <div class="skill-group-title">Data Base</div>
             <div class="skill-tags">
               <span class="skill-tag">SQL Server</span
               ><span class="skill-tag">PostgreSQL</span>
-              <span class="skill-tag">SQLite</span
-              ><span class="skill-tag">ChromaDB</span>
-              <span class="skill-tag">Machine Learning</span
-              ><span class="skill-tag">Jupyter</span>
+              <span class="skill-tag">SQLite</span>
             </div>
           </div>
           <div class="skill-group">
             <div class="skill-group-title">Tooling</div>
             <div class="skill-tags">
               <span class="skill-tag">Git &amp; GitHub</span
-              ><span class="skill-tag">Android / Java</span>
-              <span class="skill-tag">Material Design</span
-              ><span class="skill-tag">Prompt Engineering</span>
-              <span class="skill-tag">RESTful APIs</span>
+              ><span class="skill-tag">VS Code</span>
+              <span class="skill-tag">Visual Studio Code 2026</span
+              ><span class="skill-tag">AI Tools</span>
             </div>
           </div>
         </div>
@@ -1759,7 +1771,7 @@
             </div>
             <div class="project-body">
               <div>
-                <div class="project-index">01 / 04</div>
+                <div class="project-index">01 / 05</div>
                 <div class="project-title">
                   Intelligent Assistant for ERP Systems
                 </div>
@@ -1809,10 +1821,8 @@
             </div>
             <div class="project-body">
               <div>
-                <div class="project-index">02 / 04</div>
-                <div class="project-title">
-                  BestStore &mdash; E-commerce Platform
-                </div>
+                <div class="project-index">02 / 05</div>
+                <div class="project-title">E-commerce Platform</div>
                 <p class="project-desc">
                   A full-featured e-commerce application built with ASP.NET Core
                   MVC and SQL Server. I implemented product catalog management,
@@ -1860,7 +1870,7 @@
             </div>
             <div class="project-body">
               <div>
-                <div class="project-index">03 / 04</div>
+                <div class="project-index">03 / 05</div>
                 <div class="project-title">Student Performance Predictor</div>
                 <p class="project-desc">
                   A machine learning tool that predicts student academic
@@ -1910,7 +1920,7 @@
             </div>
             <div class="project-body">
               <div>
-                <div class="project-index">04 / 04</div>
+                <div class="project-index">04 / 05</div>
                 <div class="project-title">
                   Attendance Manager &mdash; Android App
                 </div>
@@ -1948,6 +1958,44 @@
                     </svg>
                     GitHub
                   </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <div class="project-img-wrap">
+              <img
+                src="assets/06-project-management-system.jpg"
+                alt="Web-Based Project Management System"
+              />
+            </div>
+            <div class="project-body">
+              <div>
+                <div class="project-index">05 / 05</div>
+                <div class="project-title">
+                  Web-Based Project Management System
+                </div>
+                <p class="project-desc">
+                  A collaborative platform designed to streamline project
+                  planning, execution, and tracking through real-time updates
+                  and task management. Teams can organize tasks, set deadlines,
+                  assign roles, and monitor progress through an intuitive
+                  dashboard and live notifications.
+                </p>
+              </div>
+              <div>
+                <div class="project-stack">
+                  <span class="stack-badge">ASP.NET Core 9</span
+                  ><span class="stack-badge">React.js</span>
+                  <span class="stack-badge">PostgreSQL</span
+                  ><span class="stack-badge">Tailwind CSS</span>
+                  <span class="stack-badge">REST APIs</span>
+                </div>
+                <div class="project-links">
+                  <span style="font-size: 0.8rem; color: var(--text2)"
+                    >Private Repository</span
+                  >
                 </div>
               </div>
             </div>
